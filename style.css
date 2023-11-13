@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 /* nav bar */
 .navbar {
     background-color: #131313;
@@ -28,7 +32,8 @@
 
 }
 
-#navbarSupportedContent>ul>li:nth-child(n)>a:hover {
+#navbarSupportedContent>ul>li:nth-child(n)>a:hover,
+#navbarSupportedContent>ul>li:nth-child(n)>a.active {
     color: #00BF85;
 }
 
@@ -66,8 +71,10 @@
 
 .hero {
     position: relative;
+    transition: ease-in 3s;
  
 }
+
 
 .hero p {
     width: 55%;
@@ -197,4 +204,9 @@
     text-align: center;
     padding: 2rem 1.5rem;
     border-radius: 10px;
+}
+
+/* footer */
+body > footer{
+    background-color: #131313 !important;
 }
